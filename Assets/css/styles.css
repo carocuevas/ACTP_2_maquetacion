@@ -1,0 +1,81 @@
+@font-face {
+    font-family:"Playfair Display";
+
+    src:url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    	url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    	url("../fonts/PlayfairDisplay-Regular.otf") format("opentype");
+
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Playfair Display";
+
+    src:url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"),
+    	url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff"),
+    	url("../fonts/PlayfairDisplay-BlackItalic.otf") format("opentype");
+    
+    font-style: italic;
+    font-weight: 700;
+}
+
+.navbar_logo{
+	max-width: 70px;
+}
+.navbar-brand{
+	left: 30vw;
+	height: auto;
+	padding: 10px;
+	margin-left: 20vw;
+}
+.navbar{
+	background-color: black;
+	border-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+a {
+	text-shadow: 0 0px 0;
+	color: white;
+}
+.icon-bar{
+	background-color: white;
+}
+.navbar-right{
+	padding: 0 15vw 0 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+}
+.jumbotron{
+	background-image: url(https://raw.githubusercontent.com/carocuevas/ACTP_2_maquetacion/master/Assets/img/post-image.jpg);
+	margin: 0;
+	background-position: center-bottom;
+	background-size: cover;
+	padding: 30vh;
+}
+h1{ 
+	font-family:"Playfair Display";
+	font-style: italic;
+	text-align: center;
+}
+.jumbotron .h1, .jumbotron h1{
+	color: white;
+}
+.container{
+	font-family: roboto;
+	padding: 0 10vw 0 10vw;
+}
+.datetime{
+	font-family:"Playfair Display";
+	padding: 3em 0 2em 0;
+}
+.iconodate{
+	border: solid 1px #eee;
+	border-radius: 50px;
+}
+
+
+
+
