@@ -59,6 +59,7 @@ h1{
 	font-family:"Playfair Display";
 	font-style: italic;
 	text-align: center;
+	padding: 0 10vw 0 10vw;
 }
 .jumbotron .h1, .jumbotron h1{
 	color: white;
@@ -66,16 +67,51 @@ h1{
 .container{
 	font-family: roboto;
 	padding: 0 10vw 0 10vw;
+	font-style: normal;
+	line-height: 1.7em;
+	font-weight: 300;
 }
 .datetime{
 	font-family:"Playfair Display";
-	padding: 3em 0 2em 0;
 }
 .iconodate{
 	border: solid 1px #eee;
 	border-radius: 50px;
+	width: 0;
+	padding-left: 6px;
+	padding-right: 17px;
 }
-
-
-
+.date{
+	padding: 3em 0 2em 0;
+}
+section p a{
+	text-decoration: none;
+	color: #ff9000;
+}
+section i{
+	color: white;
+}
+.icons{
+	background-color: #989898;
+	border-radius: 50px;
+	padding: 0.5rem;
+	font-size: 2em;
+	margin: 0.5em 5em 0,5em 5em;
+}
+.icon_comment{
+	box-sizing: border-box;
+}
+h5{
+	color: white;
+	font-weight: lighter;
+	font-size: 1rem;
+	float: left;
+	margin-left: 1em;
+}
+.fa-comment{
+	float: left;
+}
+.container_about{
+	border: solid 1px #eee;
+}
 
