@@ -94,12 +94,22 @@ section i{
 .icons{
 	background-color: #989898;
 	border-radius: 50px;
-	padding: 0.5rem;
+	margin: 10vh 2vw;
 	font-size: 2em;
 	margin: 0.5em 5em 0,5em 5em;
+	display: inline;
+	padding: 0.5em;
+	background-color: #989898;
+	border-radius: 50px;
+
 }
 .icon_comment{
 	box-sizing: border-box;
+	margin: 10vh 2vw;
+	font-size: 2em;
+	margin: 0.5em 5em 0,5em 5em;
+	display: block;
+	padding: 0.5em;
 }
 h5{
 	color: white;
@@ -113,5 +123,93 @@ h5{
 }
 .container_about{
 	border: solid 1px #eee;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 5vh 0;
+}
+.me{
+	border: solid 1px #eee;
+	border-radius: 100px;
+	max-width: 90%;
+    height: auto;
+}
+h6{
+	font-weight: lighter;
+	line-height: 20px;
+}
+p{
+	font-weight: lighter;
+}
+footer{
+	background-color: black;
+}
+.footer_logo{
+	width: 100px;
+    height: auto;
+    margin-left: 45vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.slider{
+	background-color: #eee;
+	width: 100vw;
+	height: 80px;
+	position: relative;
+}
+
+.slider li {
+	text-align: center;
+	padding-top: 5vh;
+	color: #656565;
+}
+
+/*css carrousel*/
+.jcarousel-clip{
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.jcarousel-clip li{
+	width: 100vw;
+	float: left;
+}
+
+.jcarousel-clip li img{
+	width: 100vw;
+}
+
+#prev, #forw{
+	padding: 0;
+	background: #aaa;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+	display: block;
+}
+#prev{
+	position: absolute;
+	z-index: 10;
+	top: 25%;
+	left: 30vw;
+}
+
+#forw{
+	position: absolute;
+	z-index: 10;
+	right: 30vw;
+	top: 25%;
+}
+h4{
+	font-family:"Playfair Display";
+	font-style: italic;
+}
+.col-md-1 {
+	width: auto;
 }
 

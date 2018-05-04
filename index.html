@@ -15,7 +15,33 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/jcarousel.js"></script>
+ 	<script type="text/javascript">
+		function mycarousel_initCallback(carousel) {
+			
+		    jQuery('#forw').bind('click', function() {
+		        carousel.next();
+		        return false;
+		    });
 
+		    jQuery('#prev').bind('click', function() {
+		        carousel.prev();
+		        return false;
+		    });
+		};
+
+		jQuery(document).ready(function() {
+		    jQuery("#carrusel").jcarousel({
+		       scroll :1,
+			   auto: 0,
+		       wrap : "both",
+		       initCallback: mycarousel_initCallback,
+			    buttonNextHTML: null,
+		        buttonPrevHTML: null
+			   });
+		});
+    </script>
 </head>
 <body>
 	
@@ -71,37 +97,49 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias non tenetur cupiditate. Facere consequuntur nam illo consectetur omnis atque sit, reprehenderit nisi laboriosam sunt, suscipit deserunt. Quasi suscipit, rerum.</p>
 
 				<div class="row">
-					<div class="col-md-1 icons"> <i class="fas fa-heart"></i></div>
-					<div class="col-md-1 icons"> <i class="fas fa-share-alt"></i> </div>
-					<div class="col-md-3 icons icon_comment"> <i class="fas fa-comment"></i> <h5>Comentar en Twitter</h5></div>
-				</div>
-			</section>
-
-			<section class=" jumbotron container_about">
-				<div class="row">
-					<div class="col-md-2">
-						<img class="me" src="" alt="the writer">
-					</div>
-					<div class="col-md-2 name">
-						<h4>Naomi Thai</h4>
-						<h6>@Naothai</h6>
-						<h6>depelos.com</h6>
-					</div>
-					<div class="col-md-6">
-						<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam nemo suscipit laudantium veritatis, molestias, temporibus similique excepturi, ipsam, deleniti neque nobis labore. Similique pariatur, accusantium molestias consectetur. Nemo, possimus.
-					</div>
+					<div class="icons"> <i class="fas fa-heart"></i></div>
+					<div class="icons"> <i class="fas fa-share-alt"></i> </div>
+					<div class="icon_comment"> <i class="fas fa-comment"></i> <h5>Comentar en Twitter</h5></div>
 				</div>
 			</section>
 		</main>
 
+		<section class="container_about">
+			<div class="row"> 
+				<div class="col-md-offset-2 col-md-2">
+					<img class="me" src="assets/img/naomi-thai.png" alt="me">
+				</div>
+				<div class="col-md-1 name">
+					<h4>Naomi Thai</h4>
+					<h6>@Naothai</h6>
+					<h6>depelos.com</h6>
+				</div>
+				<div class="col-md-4">
+					<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quisquam nemo suscipit laudantium veritatis, molestias, temporibus similique excepturi, ipsam, deleniti neque nobis labore. Similique pariatur, accusantium molestias consectetur. Nemo, possimus.
+				</div>
+			</div>
+		</section>
+
+		<section class="slider">
+			<div id="wrap">
+				<a id="prev" href="#">&lt;</a><a id="forw" href="#">&gt;</a>
+				<ul id="carrusel">
+				    <li>Los mejores cortes del 2018        ¿Cómo cuidar tu barba en invierno?</li>
+				    <li>¿Cómo cuidar tu barba en invierno?        Hola barbas temporada 2018</li>
+				    <li> Hola barbas temporada 2018        Los mejores cortes del 2018</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<footer>
+			<img class="footer_logo" src="assets/img/logo.png" alt="logo">
+		</footer>
 
 
 
-	<script src="http://code.jquery.com/jquery-3.3.1.js"
-	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	crossorigin="anonymous"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
