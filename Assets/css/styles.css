@@ -94,32 +94,24 @@ section i{
 .icons{
 	background-color: #989898;
 	border-radius: 50px;
-	margin: 10vh 2vw;
+	margin: 10vh 1vw;
 	font-size: 2em;
 	margin: 0.5em 5em 0,5em 5em;
 	display: inline;
-	padding: 0.5em;
-	background-color: #989898;
-	border-radius: 50px;
-
-}
-.icon_comment{
-	box-sizing: border-box;
-	margin: 10vh 2vw;
-	font-size: 2em;
-	margin: 0.5em 5em 0,5em 5em;
-	display: block;
-	padding: 0.5em;
+	padding: 0.4em;
+	float: left;
 }
 h5{
 	color: white;
 	font-weight: lighter;
 	font-size: 1rem;
-	float: left;
 	margin-left: 1em;
+	margin-right: 1em;
+	vertical-align: middle;
+	float:left;
 }
 .fa-comment{
-	float: left;
+	float:left;
 }
 .container_about{
 	border: solid 1px #eee;
@@ -211,5 +203,10 @@ h4{
 }
 .col-md-1 {
 	width: auto;
+}
+.icons_varios{
+	margin-left: 10vw;
+	clear: both;
+	box-sizing: border-box;
 }
 
